@@ -11,7 +11,7 @@ In this lab we will be using the CIFAR-10 dataset that you can find in the link 
 • CIFAR-10 dataset (https://www.cs.toronto.edu/ ̃kriz/cifar.html).
 The CIFAR-10 dataset consists of 60 000 thousand color images of dimensions 32 × 32. Images can be of any of 10 categories, and each image may only be of one such category, although for this lab the category of the images is largely irrelevant. Here are some examples of what to expect: 
 
-![Sample Image](./images/Cifar_image.png)
+![Sample Image](images/Cifar_image.jpeg)
 
 Links are provided to download the dataset in a format already prepared for python or Matlab. However, since this dataset is so common, there is likely a binding in your preferred machine learning toolkit that will download the data for you in a format ready to be used. For instance:
 
@@ -20,6 +20,10 @@ Links are provided to download the dataset in a format already prepared for pyth
 - **PyTorch**: Look up the `torchvision.datasets.CIFAR10` class.
 
 # Reconstruction 
-We use the library **Keras**: [Keras Documentation for CNNs(https://keras.io/guides/keras_applications/)  construct a convolutional autoencoder that takes an image from the CIFAR-10 dataset as input, produces a representation in latent space, and attempts to reconstruct the original image as precisely as possible. The only data the autoencoder requires is the colored image, which will act as both the input and the output to compare against. 
+We use the library:
+
+**Keras**: [Keras Documentation for CNNs(https://keras.io/guides/keras_applications/), 
+
+to construct a convolutional autoencoder that takes an image from the CIFAR-10 dataset as input, produces a representation in latent space, and attempts to reconstruct the original image as precisely as possible. The only data the autoencoder requires is the colored image, which will act as both the input and the output to compare against. 
 
 The network consists of a total of 9 layers. The input images (of size 32 × 32 × 3) are fed into a convolutional layer with filter size 3 × 3 and 8 channels (or dimensions). This is followed by a max pooling layer which downsamples the image with a 2 × 2 filter, effectively reducing the width and height of the image by a factor of 2, thereby reducing the total image area by a factor of 4. Then, another layer of filter size 3 × 3 and 12 channels follows.
