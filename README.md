@@ -11,7 +11,7 @@ In this lab we will be using the CIFAR-10 dataset that you can find in the link 
 • CIFAR-10 dataset (https://www.cs.toronto.edu/ ̃kriz/cifar.html).
 The CIFAR-10 dataset consists of 60 000 thousand color images of dimensions 32 × 32. Images can be of any of 10 categories, and each image may only be of one such category, although for this lab the category of the images is largely irrelevant. Here are some examples of what to expect: 
 
-![Sample Image](images/Cifar_image.png)
+![Sample Image](images/Cifar_image.jpeg)
 
 Links are provided to download the dataset in a format already prepared for python or Matlab. However, since this dataset is so common, there is likely a binding in your preferred machine learning toolkit that will download the data for you in a format ready to be used. For instance:
 
