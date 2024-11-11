@@ -21,6 +21,9 @@ Links are provided to download the dataset in a format already prepared for pyth
 
 # Reconstruction 
 We use the library:
-**Keras**: [Keras Documentation for CNNs(https://keras.io/guides/keras_applications/), to construct a convolutional autoencoder that takes an image from the CIFAR-10 dataset as input, produces a representation in latent space, and attempts to reconstruct the original image as precisely as possible. The only data the autoencoder requires is the colored image, which will act as both the input and the output to compare against. 
+
+**Keras**: [Keras Documentation for CNNs(https://keras.io/guides/keras_applications/), 
+
+to construct a convolutional autoencoder that takes an image from the CIFAR-10 dataset as input, produces a representation in latent space, and attempts to reconstruct the original image as precisely as possible. The only data the autoencoder requires is the colored image, which will act as both the input and the output to compare against. 
 
 The network consists of a total of 9 layers. The input images (of size 32 × 32 × 3) are fed into a convolutional layer with filter size 3 × 3 and 8 channels (or dimensions). This is followed by a max pooling layer which downsamples the image with a 2 × 2 filter, effectively reducing the width and height of the image by a factor of 2, thereby reducing the total image area by a factor of 4. Then, another layer of filter size 3 × 3 and 12 channels follows.
